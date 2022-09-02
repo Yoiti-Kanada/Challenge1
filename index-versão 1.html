@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		
+		<title>Codificador NeuroAtípico</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="decode_style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="cabecalho">
+			<img src="logo_atipico.png" class="cabecalho-logo" alt="Logotipo do Decodificador Atipico">
+			<h1 class="cabecalho-titulo">Codificador NeuroAtípico &#129504;</h1>
+		</header>
+		
+		<main>
+			<section class="conteudo-principal">
+				<textarea cols="100" rows="30" id="texto-principal" class="caixa-texto-principal" required placeholder="Digite seu texto aqui"></textarea>
+				<p class="aviso"> ⚠ Apenas letras minúsculas e sem acento.</p>
+				<div class="botoes">
+					<button class="botao-criptografar" id="criptografar" onclick="encripta()">Criptografar</button>
+					<button class="botao-descriptografar" id="desencriptografar">Descriptografar</button>
+				</div>
+			</section>
+			
+			<section class="caixa-nenhuma-mensagem">
+				<img src="busca_dino.png" class="imagem-nenhuma-mensagem" alt="Desenho de um dinossauro filhote dentro de um ovo, mostrado por uma lupa.">
+				<h2 class="titulo-nenhuma-mensagem">Nenhuma mensagem encontrada.</h2>
+				<h3 class="titulo-nenhuma-mensagem">Mas encontramos um dinossauro bebê!</h3>
+				<p class="texto-nenhuma-mensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
+			</section>
+		</main>
+
+		<footer class="rodape">
+			<img src="logo_atipico.png" class="rodape-logo" alt="Logotipo do Decodificador Atipico"> 
+			<p class="copyright"> &copy; Copyright Decodificador Atípico - 2022</p>
+		</footer>
+
+		<script src="codificador.js"></script>
+	</body>
+</html>
